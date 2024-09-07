@@ -25,10 +25,10 @@
         .search{
             padding: 13px;
             padding-right: 35px;
-            border-radius: 10px 0 0 10px;
+            border-radius: 5px 0 0 5px;
             border: 0;
             outline: none;
-            width: 680px;
+            width: 760px;
         }
         .btnSearch{
             position: absolute;
@@ -60,8 +60,8 @@
         }
 
         .logo-container{
-            margin-left: 80px;
-            margin-right: 35px;
+            margin-left: 70px;
+            margin-right: 45px;
         }
         .search-container{
             margin-right: 80px;
@@ -69,7 +69,7 @@
             margin-top: 2.2%;
         }
         .btns-container{
-            margin-left: 60px;
+            margin-left: 80px;
             margin-top: 2.2%;
         }
         .car-shop{
@@ -109,8 +109,8 @@
         margin-bottom: 3%;
        }
        .card{
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 8%;
+        margin-right: 8%;
         margin-top: 2%;
        }
        p{
@@ -121,8 +121,8 @@
 <body>
     <!--Navbar-->
     <header class="navbar">
-        <div class="upContainer-navbar d-flex justify-content-around ">
-            <div class="logo-container" style="cursor: pointer;" id="logo">
+        <div class="upContainer-navbar d-flex justify-content-around " style="margin-left:6%;">
+            <div class="logo-container" id="logo">
                 <img class="logo" src="./src/img/nexxus-blanco-removebg-preview.png" alt="logo">
             </div>
             <div class="search-container">
@@ -131,21 +131,29 @@
             </div>
             <div class="btns-container d-flex justify-content-around">
                 <img class="car-shop" src="./src/img/cart-outline.svg" alt="">
-                <div>
+                <div class="dropdown" id="menu">
                     <img class="user" src="./src/img/person-outline.svg" alt="">
                     <img class="chevron-down" src="./src/img/chevron-down-outline.svg" alt="">
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Mi perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Gestionar perfil de vendedor</a></li>
+                        <li><a class="dropdown-item" href="#">cerrar sesion</a></li>
+                      </ul>
+                    
                 </div>
             </div>
         </div>
 
+        
         <script>
             const logo = document.getElementById('logo');
             logo.addEventListener('click',() => {
                 location.href = './index.html'
             });
         </script>
+   
 
-        <div class="downContainer-navbar">
+        <div class="downContainer-navbar" style="margin-left: 6%;">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -157,19 +165,19 @@
                         <a class="nav-link" aria-current="page" href="#"><img class="menu" style="width: 25px; height: 25px; margin-right: 10px;" src="./src/img/menu.svg" alt="">Categorías</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Ofertas exclusivas</a>
+                        <a class="nav-link" href="./ofertasExclusivas.html" >Ofertas exclusivas</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Vender</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de nosotros</a>
+                        <a class="nav-link" href="./aboutUs.html">Acerca de nosotros</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contáctanos</a>
+                        <a class="nav-link" href="./contactUs.html">Contáctanos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="./FAQ.html">FAQ</a>
                       </li>
                     </ul>
                   </div>
@@ -177,9 +185,10 @@
               </nav>
         </div>  
     </header>
+
    <div class="card">
-        <div class="card-body mt-4 d-flex ">
-            <div class="product" style="margin-left: 4%;">
+        <div class="card-body mt-5 d-flex ">
+            <div class="product" style="margin-left: 7.5%;">
                 <div class="img-product">
                     <img src="./src/img/swicht.jpeg" alt="" style="margin-left: 2%; margin-bottom: 2%; width: 540px; height: 300px; border-radius: 10px; border: 2px solid; border-color: #0F2226;">
                 </div>

@@ -20,7 +20,7 @@
         .nexxus{
             background-color: #0F2226;
             width: 30%;
-            height: 100vh;
+            height: 105vh;
         }
         .text{
             color: #FFFF;
@@ -46,16 +46,25 @@
     </style>
 <body>
     <div class="row">
-        <div class="col nexxus" >
-            <img src="./src/img/nexxus-blanco-removebg-preview.png" alt="logo" style="margin-top: 20%; margin-left: 10%;">
+        <div class="col nexxus text-center"  >
+            <img src="./src/img/nexxus-blanco-removebg-preview.png" alt="logo" style="margin-top: 15%; ">
              <p class="text">¡Registrate para la mejor experiencia de compra!</p>
         </div>
         <div class="col form" >
-            <div class="text-end" style="margin-right: 20%; margin-top: 5%;">
-                <button type="button" class="btn btn-primary " style="background-color: #fff; color:#b1b1b1; border-color: #0F2226; border-radius: 5px 0 0 5px; position: relative; ">Iniciar sesión</button>
+            <div class="text-end" style="margin-right: 20%; margin-top: 4%;">
+                <button id="log" type="button" class="btn btn-primary " style="background-color: #fff; color:#b1b1b1; border-color: #0F2226; border-radius: 5px 0 0 5px; position: relative; ">Iniciar sesión</button>
                 <button type="button" class="btn btn-primary" style="background-color:#0F2226; color: #FFFF; border-color:#0F2226; border-radius: 0 5px 5px 0; position: absolute;">Registrarse</button>
                 
             </div>
+
+            <script>
+                const boton = document.getElementById('log')
+                boton.addEventListener('click', ()=>{
+                    location.href='./login.html'
+                })
+
+                
+            </script>
 
             <form action="" class="register">
                 <div class="mb-5">
@@ -67,12 +76,18 @@
                 <div class="mb-5">
                     <input type="password" class="form-control" name="password" placeholder="Ingresa tu contraseña">
                 </div>
-                <div class="mb-5">
+                <div class="mb-4">
                     <input type="password" class="form-control" name="password" placeholder="Confirma la contraseña">
                 </div>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-primary log" style="background-color: #0F2226; border: none;">Registrate</button>
+                    <button type="button" id="regis"  class="btn btn-primary log" style="background-color: #0F2226; border: none;">Registrate</button>
                 </div>
+               <script>
+               const boton2 = document.getElementById('regis')
+                boton2.addEventListener('click', ()=>{
+                    location.href='./login.html'
+                })
+               </script>
             </form>
         </div>
     </div>
