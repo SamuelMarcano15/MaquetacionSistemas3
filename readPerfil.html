@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexxus</title>
+    <link rel="shortcut icon" href="./src/img/icono.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <Style>
+        @font-face {
+        font-family: Inter;
+        src: url(./fonts/static/Inter_18pt-Regular.ttf);
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #F2CD88;
+            color: #0F2226;
+        }
+        .navbar{
+            background-color: #0F2226;
+        }
+        .search{
+            padding: 13px;
+            padding-right: 35px;
+            border-radius: 5px 0 0 5px;
+            border: 0;
+            outline: none;
+            width: 680px;
+        }
+        .btnSearch{
+            position: absolute;
+            padding: 8px;
+            border-radius: 0 5px 5px 0;
+            height: 50px;
+            width: 75px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .car-shop{
+            width: 50px;
+            height: 50px;
+            cursor:pointer;
+        }
+        .user{
+            width: 40px;
+            height: 45px;
+            cursor:pointer;
+        }
+        .chevron-down{
+            width: 30px;
+            height: 25px;
+            margin-top: 5px;
+            cursor:pointer;          
+        }
+
+        .logo-container{
+            margin-left: 80px;
+            margin-right: 35px;
+        }
+        .search-container{
+            margin-right: 80px;
+            margin-left: 10px;
+            margin-top: 2.2%;
+        }
+        .btns-container{
+            margin-left: 60px;
+            margin-top: 2.2%;
+        }
+        .car-shop{
+            margin-right: 35px;
+        }
+        .nav-link{
+            color:white;
+            margin-left: 60px;
+            margin-right: 5px;
+            
+        }
+        .nav-link:hover{
+            color:grey;
+        }
+        
+       .img-perfil{
+        background-color: #fff;
+        width: 110px;
+        height:110px;
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: 5%;
+        margin-top: 2%;
+        border-radius: 5px;
+        transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: inset 0 -3em 3em rgba(148, 148, 148, 0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(148, 148, 148, 0.3);
+       }
+       .name-sections{
+        margin-right: 25%;
+        margin-top: 2%;
+       }
+       p{
+        margin-right: 40px;
+        cursor: pointer;
+       }
+       .btns{
+        margin-right: 3%;
+        margin-top: 8%;
+       }
+       .bt-seguir:hover{
+        background-color: #25515ac3;
+       }
+       .perfilNavbar{
+        height: 150px;
+       }
+       .card{
+            width: 20%;
+            height: 350px;
+            text-align: left;
+            transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+        }
+        .card-body{
+            cursor: pointer;
+        }
+    </Style>
+</head>
+<body>
+    <!--Navbar-->
+    <header class="navbar">
+        <div class="upContainer-navbar d-flex justify-content-around ">
+            <div class="logo-container">
+                <img class="logo" src="./src/img/nexxus-blanco-removebg-preview.png" alt="logo">
+            </div>
+            <div class="search-container">
+                <input class="search" type="text" placeholder="Buscar">
+                <button class="btn btn btn-light btnSearch" type="button"><img src="./src/img/search.svg" style="width: 25px; " alt="Buscar"></button>
+            </div>
+            <div class="btns-container d-flex justify-content-around">
+                <img class="car-shop" src="./src/img/cart-outline.svg" alt="">
+                <div>
+                    <img class="user" src="./src/img/person-outline.svg" alt="">
+                    <img class="chevron-down" src="./src/img/chevron-down-outline.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="downContainer-navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><img class="menu" style="width: 25px; height: 25px; margin-right: 10px;" src="./src/img/menu.svg" alt="">Categorías</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas exclusivas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Vender</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>  
+    </header>
+    <!--PerfilNavbar-->
+    <div class="perfilNavbar bg-white d-flex justify-content-around">
+        <div class="img-perfil">
+            <img src="./src/img/cangre.jpg" alt="perfil" style="width: 110px; height: 110px;">
+        </div>
+        <div class="name-sections">
+            <h3 style="margin-bottom: 7%; margin-top: 6%;"><b>Samuel Marcano</b></h3>
+            <div class="sections d-flex">
+                <p>Para el hogar<img src="./src/img/chevron-down.svg" alt="..." style="width: 20px; height: 20px;"></p>
+                <p>Tecnología<img src="./src/img/chevron-down.svg" alt="..." style="width: 20px; height: 20px;"></p>
+                <a href="" style="text-decoration: none; color:#0F2226">Todos los productos</a>
+            </div>
+        </div>
+        <div class="btns">
+            <button type="button" class="bt-seguir btn btn-primary" style="background-color: #0F2226; color: white; border-color: #0F2226; width: 100px; height: 35px; border-radius: 10px; font-weight: 600;">Seguir</button>
+            <button type="button" class="btn btn-light"><img src="./src/img/share-from-square-regular.svg" alt="..." style="width: 20px; height: 20px; margin-right: 5px;">Compartir</button>
+        </div>
+    </div>
+    <!--Products-->
+    <h4 style="margin-left: 6%; margin-top: 2%;"><b>Todos los productos</b></h4>
+    <div class="d-flex justify-content-around mt-5" style="margin-right: 25px; margin-left: 25px;">
+        <div class="card"> 
+            <div class="card-body">
+                <img src="./src/img/muebles.jpg"  alt="..." style="width: 100%; height: 180px; border-radius: 5px;">
+                <h6 style="margin-top: 10%; margin-bottom: 15px;">Moderno juego de muebles para sala</h6>
+                <span style="font-weight: bold;  font-size: 20px;">USD $500</span>
+            </div>
+        </div>
+        <div class="card"> 
+            <div class="card-body">
+                <img src="./src/img/monitor.jpg" alt="..." style="width: 100%;height: 180px; border-radius: 5px;">
+                <h6 style="margin-top: 10%; margin-bottom: 30px;">LG Monitor Ultrafine 4k</h6>
+                <span style="font-weight: bold;  font-size: 20px;">USD $120</span>
+            </div>
+        </div>
+        <div class="card"> 
+            <div class="card-body">
+                <img src="./src/img/espejo.jpg" alt="..." style="width: 100%; height: 180px; border-radius: 5px;">
+                <h6 style="margin-top: 10%; margin-bottom: 30px;">Espejo para piso arqueado</h6>
+                <span style="font-weight: bold;  font-size: 20px;">USD $55</span>
+            </div>
+        </div>
+        <div class="card"> 
+            <div class="card-body">
+                <img src="./src/img/2dsxl.jpg" alt="..." style="width: 100%; height: 180px; border-radius: 5px;">
+                <h6 style="margin-top: 10%; margin-bottom: 30px;">Nintendo new 2DSXL</h6>
+                <span style="font-weight: bold;  font-size: 20px;">USD $150</span>
+            </div>
+        </div>
+        <div style="margin-top: 14%;">
+            <img src="./src/img/chevron-forward.svg" alt="" style="width: 30px; height: 30px; cursor: pointer;">
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

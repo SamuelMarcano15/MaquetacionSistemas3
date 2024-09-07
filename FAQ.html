@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexxus</title>
+    <link rel="shortcut icon" href="./src/img/icono.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <Style>
+        @font-face {
+        font-family: Inter;
+        src: url(./fonts/static/Inter_18pt-Regular.ttf);
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #F2CD88;
+            color: #0F2226;
+        }
+        .navbar{
+            background-color: #0F2226;
+        }
+        .search{
+            padding: 13px;
+            padding-right: 35px;
+            border-radius: 5px 0 0 5px;
+            border: 0;
+            outline: none;
+            width: 680px;
+        }
+        .btnSearch{
+            position: absolute;
+            padding: 8px;
+            border-radius: 0 5px 5px 0;
+            height: 50px;
+            width: 75px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .car-shop{
+            width: 50px;
+            height: 50px;
+            cursor:pointer;
+        }
+        .user{
+            width: 40px;
+            height: 45px;
+            cursor:pointer;
+        }
+        .chevron-down{
+            width: 30px;
+            height: 25px;
+            margin-top: 5px;
+            cursor:pointer;          
+        }
+
+        .logo-container{
+            margin-left: 80px;
+            margin-right: 35px;
+        }
+        .search-container{
+            margin-right: 80px;
+            margin-left: 10px;
+            margin-top: 2.2%;
+        }
+        .btns-container{
+            margin-left: 60px;
+            margin-top: 2.2%;
+        }
+        .car-shop{
+            margin-right: 35px;
+        }
+        .nav-link{
+            color:white;
+            margin-left: 60px;
+            margin-right: 5px;
+            
+        }
+        .nav-link:hover{
+            color:grey;
+        }
+        
+        .card{
+            width: 40%;
+            height: 700px;
+            
+        }
+        .card-body{
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+        .center-logo{
+            width: 20%;
+            margin-right: 5%;
+            margin-top: 14%;
+        }
+        .cont{
+            margin-top: 5%;
+        }
+    </Style>
+</head>
+<body>
+    <!--Navbar-->
+    <header class="navbar">
+        <div class="upContainer-navbar d-flex justify-content-around ">
+            <div class="logo-container" style="cursor: pointer;" id="logo">
+                <img class="logo" src="./src/img/nexxus-blanco-removebg-preview.png" alt="logo">
+            </div>
+            <div class="search-container">
+                <input class="search" type="text" placeholder="Buscar">
+                <button class="btn btn btn-light btnSearch" type="button"><img src="./src/img/search.svg" style="width: 25px; " alt="Buscar"></button>
+            </div>
+            <div class="btns-container d-flex justify-content-around">
+                <img class="car-shop" src="./src/img/cart-outline.svg" alt="">
+                <div>
+                    <img class="user" src="./src/img/person-outline.svg" alt="">
+                    <img class="chevron-down" src="./src/img/chevron-down-outline.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const logo = document.getElementById('logo');
+            logo.addEventListener('click',() => {
+                location.href = './index.html'
+            });
+        </script>
+
+<div class="downContainer-navbar">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"><img class="menu" style="width: 25px; height: 25px; margin-right: 10px;" src="./src/img/menu.svg" alt="">Categorías</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ofertasExclusivas.html">Ofertas exclusivas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vender</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutUs.html">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactUs.html">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./FAQ.html"  style="border-bottom: 3px solid #fff;"><b>FAQ</b></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>  
+    </header>
+    <!--Container-->
+    <div class="d-flex justify-content-around cont">
+        <div class="card" style="margin-left: 3%;">
+            <div class="card-body">
+                <h4 class="card-title" style="margin-bottom: 4%; margin-top: 5%;"><b>Preguntas frecuentes sobre compras</b></h4>
+                <h5>¿Cómo puedo saber cual es el mejor vendedor?</h5><br>
+                <p>
+                    Al revisar la descripción de la publicación acerca  del producto de interes, también se puede ver la descripción del vendedor, 
+                    su reputación, cantidad de ventas, lo que te ayudará a tomar la mejor elección.
+                </p><br>
+                <h5>¿Cómo puedo pagar mi compra?</h5><br>
+                <p>
+                    Debes llegar a un acuerdo con el vendedor para concretar la compra, es recomendable que al momento de hacer transacciones
+                     no aceptar plataformas de pago donde no se pueda verificar la identidad de la otra persona, tambien es importante tener guardado tu constante de pago
+                </p>
+
+            </div>
+        </div>
+        <div class="center-logo">
+            <img src="./src/img/nexxus-blanco-removebg-preview.png" alt="logo" style="width: 300px; height: 300px;">
+        </div>
+        <div class="card" style="margin-right: 3%;">
+            <div class="card-body">
+                <h4 class="card-title" style="margin-bottom: 4%; margin-top: 5%;"><b>Preguntas frecuentes sobre ventas</b></h4>
+                <h5>¿Cómo cobrar se manera segura?</h5>
+                <p>
+                    Al momento de concretar una venta debes asegurarte de varias cosas dependiendo del método de pago, si es en efectivo cuenta el dinero antes de entregar el producto, en caso de ser un cheque debes verificar su veracidad,
+                     y en caso de ser a través de una transferencia bancara o algun monedero, verifica que dicha plataforma acreditó el monto correcto para finalmente entregar el producto
+                </p>
+                <h5>¿Cómo entrego un producto?</h5>
+                <ul>
+                    Debes seguir las siguientes pautas:
+                    <li>
+                        Mantener contacto con el cliente para asegurar la forma de envio
+                    </li>
+                    <li>
+                        Enviar el paquete a nombre de la persona que lo pidió
+                    </li>
+                    <li>
+                        Si utilizas alguna empreza de envio guarda la copia del recibo para tener pruebas del mismo
+                    </li>
+                    <li>
+                        En caso de ser una entrega directa hecha por ti, debes hacer que el cliente firme un documento que atestigue que el mismo lo recibió
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
