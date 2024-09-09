@@ -149,9 +149,14 @@
             </div>
             <div class="btns-container d-flex justify-content-around">
                 <img class="car-shop" src="./src/img/cart-outline.svg" alt="">
-                <div>
-                    <img class="user" src="./src/img/person-outline.svg" alt="">
-                    <img class="chevron-down" src="./src/img/chevron-down-outline.svg" alt="">
+                <div class="dropdown">
+                    <img class="user dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="./src/img/person-outline.svg" alt="">
+                    <img class="chevron-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="./src/img/chevron-down-outline.svg" alt="">
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./readPerfil.html">Perfil</a></li>
+                      <li><a class="dropdown-item" href="./editPerfil.html">Perfil de vendedor</a></li>
+                      <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -209,7 +214,7 @@
             <h3 style="margin-bottom: 7%; margin-top: 4%;"><b>Samuel Marcano</b></h3>
             <div class="sections d-flex">
                 <a href="" style="text-decoration: none; border-bottom: 3px solid #498c99c4; color:#22474f"><b>Información personal</b></a>
-                <a href="" style="text-decoration: none; color:#0F2226">Productos</a>
+                <a href="./Products.html" style="text-decoration: none; color:#0F2226">Productos</a>
                 <a href="" style="text-decoration: none; color:#0F2226">Ventas</a>
                 <a href="" style="text-decoration: none; color:#0F2226">Facturación</a>
             </div>
@@ -274,6 +279,8 @@
     </div>
 
 
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
+   <scripts src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

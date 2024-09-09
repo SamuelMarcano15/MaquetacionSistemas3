@@ -170,9 +170,14 @@
             </div>
             <div class="btns-container d-flex justify-content-around">
                 <img class="car-shop" src="./src/img/cart-outline.svg" alt="">
-                <div>
-                    <img class="user" src="./src/img/person-outline.svg" alt="">
-                    <img class="chevron-down" src="./src/img/chevron-down-outline.svg" alt="">
+                <div class="dropdown">
+                    <img class="user dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="./src/img/person-outline.svg" alt="">
+                    <img class="chevron-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="./src/img/chevron-down-outline.svg" alt="">
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./readPerfil.html">Perfil</a></li>
+                      <li><a class="dropdown-item" href="./editPerfil.html">Perfil de vendedor</a></li>
+                      <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -225,12 +230,13 @@
         <div class="name-sections">
             <h3 style="margin-bottom: 7%; margin-top: 4%;"><b>Samuel Marcano</b></h3>
             <div class="sections d-flex">
-                <a href="" style="text-decoration: none; color:#0F2226">Información personal</a>
-                <a href="" style="text-decoration: none; border-bottom: 3px solid #498c99c4; color:#22474f"><b>Productos</b></a>
+                <a href="./editPerfil.html" style="text-decoration: none; color:#0F2226">Información personal</a>
+                <a href="./productsAction.html" style="text-decoration: none; border-bottom: 3px solid #498c99c4; color:#22474f"><b>Productos</b></a>
                 <a href="" style="text-decoration: none; color:#0F2226">Ventas</a>
                 <a href="" style="text-decoration: none; color:#0F2226">Facturación</a>
             </div>
         </div>
+        
     </div>
     <!--Information-->
     <div class="filtrar-container d-flex justify-content-between">
@@ -261,12 +267,24 @@
                     </label>
                 </div>
                 <div class="d-flex" style="margin-right: 15%;">
-                    <p style="white-space: nowrap; cursor: pointer;">Crear Publicación</p>
-                    <p style="margin-left: 18%; cursor: pointer;">Editar</p>
+                    <p id="create" style="white-space: nowrap; cursor: pointer;">Crear Publicación</p>
+                    <p id="edit" style="margin-left: 18%; cursor: pointer;">Editar</p>
                     <p  id="myButton" style="margin-left: 20%; cursor: pointer;">Eliminar</p>
                 </div>
             </div>
         </div>
+
+        <script>
+            const editProduct= document.getElementById('edit');
+            const createProduct = document.getElementById('create');
+            createProduct.addEventListener('click', ()=>{
+                location.href = './createProduct.html'
+            });
+            editProduct.addEventListener('click', ()=>{
+                location.href='./editProduct.html'
+            } )
+        </script>
+
         <div class="card" style=" height: 40vh">
             <div class="card-body">
                 <div class="card" style="height: 70px; width: 102.5%; margin: 0; position: relative; right: 1.3%; bottom: 6.5%;">
@@ -305,8 +323,9 @@
 
 
     <script src="./node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./src/function.js"></script> </body>
+    <scripts src="./js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
